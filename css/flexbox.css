@@ -7,3 +7,73 @@
 .cabecalhoPrincipal-nav{
     display: flex;
 }
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-right: 5%;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    width: 25%;
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
+    height: 250px;
+    flex-flow: column wrap;
+}
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+}
+
+@media (max-width:768px){
+    .cabecalhoPrincipal .container,
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .conteudoPrincipal-cursos{
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+    
+    .rodapePrincipal-patrocinadores-list{
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+}
